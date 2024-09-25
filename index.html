@@ -1,8 +1,67 @@
-<!DOCTYPE html>
 <html>
-<head>
+  <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Telugu:wght@100..900&display=swap" rel="stylesheet">
+  
+<style>
+  body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+
+  .telugu {
+    font-family: "Noto Sans Telugu";
+  }
+
+  .balance span {
+    display: block;
+    text-align: center;
+  }
+
+  .balance span:nth-child(3) {
+    padding: .54em;
+    background-image: linear-gradient(to left, #0b9c0b, #059e21, #01a02f, #00a23b, #00a446);
+    max-width: 90px;
+    margin: 0 auto;
+    margin-top: .5em;
+    color: #fff;
+    border-radius: 18px;
+    letter-spacing: .9px;
+  }
+
+  .balance span:nth-child(3)::before {
+    content: "₹";
+    padding-right: 0.18em ;
+  }
+
+  .list-3 {
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+  }
+
+  .fs-xs {font-size: 9px}
+  .fs-s {font-size: 10px}
+  .fs-m {font-size: 13px}
+  .fs-l {font-size: 16px}
+  .fs-xl {font-size: 18px}
+  .fs-xxl {font-size: 22px}
+  .fs-xxxl {font-size: 27px}
+
+  .b-600 {
+    font-weight: 600;
+  }
+
+  .red {
+    color: red;
+  }
+
+</style>
+
 </head>
 <body>
-  <p>Hello World</p>
+  <div class="balance">
+    <span class="list-1 telugu red b-600">ఈరోజు (25/09/2024) నా అకౌంట్</span>
+    <span class="list-2 telugu b-600">బ్యాలన్స్</span>
+    <span class="list-3 fs-xxl b-600">596</span>
+  </div>
 </body>
 </html>
